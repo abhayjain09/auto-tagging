@@ -1,7 +1,7 @@
 import boto3
 import json
 
-aws_mag_con=boto3.session.Session()
+aws_mag_con=boto3.session.Session(region_name="us-east-1")
 lambda_con_cli = aws_mag_con.client(service_name='lambda',region_name="us-east-1")
 #ec2_con_cli =aws_mag_con.client(service_name="ec2",region_name="us-east-1")
 #s3_con_res = aws_mag_con.resource('s3')
