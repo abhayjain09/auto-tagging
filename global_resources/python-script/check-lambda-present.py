@@ -15,7 +15,7 @@ for each in response['Regions']:
 i = False
 for each in RegionID:
  lambda_con_cli = aws_mag_con.client(service_name='lambda',region_name=each)
- print(each)
+ #print(each)
  try:
   response = lambda_con_cli.get_function(FunctionName='Resources-Tag-Automation')
   i = True
